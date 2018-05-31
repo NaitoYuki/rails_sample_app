@@ -1,0 +1,25 @@
+version: '2'
+services:
+  db:
+    image: postgres
+  app:
+    build: .
+    command: bash -c 'rm -f tmp/pids/server.pid && rails s -b 0.0.0.0'
+    volumes:
+      - .:/rails_sample_app
+    volumes_from:
+      - bundle
+    depends_on:
+      - db
+    links:
+      - db
+    environment:
+      DB_USER: root
+      DB_PASSWORD: password
+      DB_HOST: db
+    tty: true
+    stdin_open: true
+  bundle:
+    image: rails_sample_app
+    volumes:
+      - /bundle

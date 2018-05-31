@@ -1,0 +1,10 @@
+{
+  "name": "rails_sample_app",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "popper.js": "^1.14.3",
+    "bootstrap-daterangepicker": "^2.1.25",
+    "jquery": "^3.3.1"
+  }
+}
