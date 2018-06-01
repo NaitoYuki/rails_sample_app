@@ -25,6 +25,7 @@ gem 'mini_magick'
 gem 'seed-fu'
 gem 'paranoia'
 gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'google-cloud-firestore'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
