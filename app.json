@@ -1,7 +1,7 @@
 {
   "name": "rails_sample_app",
   "scripts": {
-    "postdeploy": "bundle exec rake db:migrate"
+    "postdeploy": "bundle exec rails db:setup"
   },
   "env": {
     "SECRET_TOKEN": {
