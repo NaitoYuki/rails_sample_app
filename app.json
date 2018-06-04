@@ -4,6 +4,9 @@
     "postdeploy": "bundle exec rails db:schema:load db:seed_fu"
   },
   "env": {
+    "DATABASE_URL":{
+      "required":true
+    },
     "SECRET_TOKEN": {
       "required": true
     }
