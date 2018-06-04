@@ -1,8 +1,12 @@
 {
   "name": "rails_sample_app",
   "scripts": {
+    "postdeploy": "pg_dump -Fc $DATABASE_URL_TO_COPY | pg_restore --clean --no-owner -n public -d $DATABASE_URL && bundle exec rails db:migrate"
   },
   "env": {
+    "DATABASE_URL":{
+      "required":true
+    },
     "SECRET_TOKEN": {
       "required": true
     }
