@@ -19,6 +19,7 @@ gem 'rails-i18n'
 gem 'devise'
 gem 'devise-i18n'
 gem 'omniauth-facebook'
+gem 'dotenv-rails'
 gem 'enum_help'
 gem 'carrierwave'
 gem 'mini_magick'
@@ -42,3 +43,4 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'rails_12factor', group: :production
