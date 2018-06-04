@@ -1,7 +1,7 @@
 {
   "name": "rails_sample_app",
   "scripts": {
-    "postdeploy": "bundle exec rails db:setup"
+    "postdeploy": "bundle exec rails db:schema:load db:seed_fu"
   },
   "env": {
     "SECRET_TOKEN": {
